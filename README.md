@@ -8,7 +8,7 @@ This project is a clone of the landing pageorhome page for AirBnB. It is built u
 
 ## Live Link
 
-Checkout the project. Feedback is very much appreciated. [https://airbnb-landingpage-clone.vercel.app/](AirBnB-Clone)
+Checkout the project. Feedback is very much appreciated. [AirBnB-Clone](https://airbnb-landingpage-clone.vercel.app/)
 
 ## Available Scripts
 
