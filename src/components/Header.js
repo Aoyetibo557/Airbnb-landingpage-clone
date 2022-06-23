@@ -6,6 +6,7 @@ import { HiOutlineSearch } from 'react-icons/hi';
 import { GrLanguage } from 'react-icons/gr'
 import { MdLanguage } from 'react-icons/md';
 import { Avatar } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 
 
 
@@ -14,7 +15,9 @@ function Header() {
     return (
         <div className="header">
             <div>
-                <img className="logo" src={Logo} alt="Logo" />
+               <Link to="/">
+                    <img className="logo" src={Logo} alt="Logo" />
+               </Link>
             </div>
             
             <div className="header__searchcontainer">

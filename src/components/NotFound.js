@@ -8,23 +8,23 @@ function NotFound() {
     const [timer, setTimer] = useState(10);
     const history = useHistory();
 
-    // useEffect(() => {
-    //     setInterval(() => {
-    //         countDown()
-    //     },1000);
+    useEffect(() => {
+        setInterval(() => {
+            countDown()
+        },1000);
 
 
-    //     return clearInterval();
-    // // eslint-disable-next-line react-hooks/exhaustive-deps
-    // },[timer])
+        return clearInterval();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    },[timer])
 
-    // const countDown = () =>{
-    //     if(timer === 0) {
-    //         history.push("/")
-    //     }else{
-    //         setTimer(timer -1)
-    //     }
-    // }
+    const countDown = () =>{
+        if(timer === 0) {
+            history.push("/")
+        }else{
+            setTimer(timer -1)
+        }
+    }
   return (
     <div className='notfound'>
         <div>
