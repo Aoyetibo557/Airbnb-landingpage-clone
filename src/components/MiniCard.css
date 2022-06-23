@@ -1,0 +1,28 @@
+.minicard{
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.minicard> img {
+    max-width: 67px;
+    border-radius: 12px;
+    padding: 5px;
+    object-fit: fill;
+}
+
+.minicard__info{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.minicard__info > h2{
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.minicard__info > p{
+    font-weight: 400;
+    font-size: 16px;
+}

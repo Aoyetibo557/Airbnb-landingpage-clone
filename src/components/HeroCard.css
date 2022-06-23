@@ -1,0 +1,86 @@
+.heroCard{
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    
+}
+
+
+.heroCard picture > img {
+    width: 95%;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.heroCard > div {
+    position: absolute;
+    left: 260px;
+    margin-top: 100px;
+    color: #fff;
+    width: 400px;
+}
+
+.heroCard div > h2 {
+    font-weight: 500;
+    font-size: 3.2rem;
+}
+
+.heroCard div > p {
+    margin-top: 30px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.heroCard div > button{
+    background-color: #fff;
+    color: #333;
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: capitalize !important;
+}
+
+.heroCard div > button:hover {
+    background: #fff;
+    color: #222;
+}
+
+@media only screen and (max-width: 768px) { 
+    .heroCard{
+        z-index: 0 !important;
+        border:  0px none !important;
+        display: block !important;
+        overflow: hidden !important;
+        position: relative !important;
+        text-align: left !important;
+        text-decoration: none !important;
+        width: 100% !important;
+        border-radius: 16px !important;
+    }
+
+    .heroCard > div {
+        position: absolute;
+        left: 20px;
+        top: -100px;
+        color: #fff;
+        width: 300px;
+        text-align: center;
+        padding: 0;
+    }
+
+    .heroCard div > h2 {
+        font-weight: 500;
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .heroCard div > p {
+        margin-top: 0px;
+        font-size: 17px;
+        font-weight: 400;
+    }
+}

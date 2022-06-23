@@ -1,0 +1,3 @@
+Note Date Picker Installs:
+npm i react-date-range,
+npm i date-fns

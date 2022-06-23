@@ -1,0 +1,116 @@
+::-webkit-scrollbar{
+    display: none;
+}
+.home__explore{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin-left: 40px;
+}
+
+.home__explore > h2{
+    font-weight: 700;
+    font-size: 2rem;
+    padding-left: 35px;
+    margin-bottom: 10px;
+}
+
+.home__explore > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+
+.home__section__container{
+    margin-top: 50px;
+    width: 90%;
+    margin-left: 60px;
+    
+    
+}
+
+
+.home__section__container > h3 {
+    font-weight: 700;
+    font-size: 2rem;
+    padding-left: 10px;
+}
+.home__section{
+    display: grid;
+    grid-auto-flow: column !important;
+    overflow: auto hidden !important;
+    scroll-snap-type: x mandatory !important;
+    gap: 5px !important;
+    margin-top: 20px;
+
+}
+
+.home__herocard{
+    margin-left: 60px;
+
+}
+
+
+.home__discover{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95% !important;
+    margin-left: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.home__discover > div{
+   display: grid;
+    grid-auto-flow: column !important;
+    overflow: auto hidden !important;
+    scroll-snap-type: x mandatory !important;
+    gap: 5px !important;
+   
+}
+
+.home__discover > h2{
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+.home__discover > p{
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) { 
+    .home__explore{
+        display: flex;
+        margin: 0;
+        width: 100%;
+        height: 50vh;
+        overflow-x: scroll;
+    }
+
+    .home__explore > div {
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .home__section__container{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    .home__herocard{
+        margin-left: 10px;
+        background: none;
+    }
+    .home__discover{
+        margin-left: 10px;
+    }
+}
