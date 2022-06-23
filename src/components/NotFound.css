@@ -1,0 +1,32 @@
+.notfound {
+    display: flex;
+    flex-direction: column;
+}
+
+.notfound__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.notfound__image {
+    width: 60%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.notfound__container h3 {
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin-top: 50px;
+    text-align: center;
+
+}
+
+.timer {
+    color: red;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
