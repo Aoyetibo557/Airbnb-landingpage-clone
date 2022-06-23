@@ -2,6 +2,14 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Decription
+
+This project is a clone of the landing pageorhome page for AirBnB. It is built using the react js framework.
+
+## Live Link
+
+Checkout the project. Feedback is very much appreciated. [https://airbnb-landingpage-clone.vercel.app/](AirBnB-Clone)
+
 ## Available Scripts
 
 In the project directory, you can run:
