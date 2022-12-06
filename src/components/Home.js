@@ -1,15 +1,25 @@
 import { Button } from '@material-ui/core';
-import React from 'react';
+import React, {useEffect} from 'react';
 import Banner from './Banner';
 import Card from './Card';
 import HeroCard from './HeroCard';
 import './Home.css';
 import MiniCard from './MiniCard';
+import Videoplayer from './_videoplayer/Videoplayer';
 
 
 function Home() {
+    useEffect(() => {
+        //    check if session storage has a key called videoMadalOpen, if it doesn't, create it and set it to true
+        if (!sessionStorage.getItem("videoMadalOpen")) {
+            sessionStorage.setItem("videoMadalOpen", "true");
+        }
+    }, []);
+
+    
     return (
-        <div className="home"> 
+        <div className="home">
+            <Videoplayer />
             <Banner />
 
             <div className="home__explore">
@@ -18,24 +28,24 @@ function Home() {
                     <MiniCard 
                         src="https://a0.muscache.com/im/pictures/e8d3d6de-40b1-4341-89f2-afb2a1a4f71f.jpg?im_q=medq&im_w=240"
                         place="Montauk"
-                        distance={3}
+                        distance={5}
                     />
 
                     <MiniCard 
                         src="https://a0.muscache.com/im/pictures/c2eba2e9-0d80-4704-9e2c-34ac16316c53.jpg?im_q=medq&im_w=240"
                         place="Ocean City"
-                        distance={3}
+                        distance={4}
                     />
                     <MiniCard 
                         src="https://a0.muscache.com/im/pictures/0445ba36-5684-4cca-9cb1-418a0ffdcd2f.jpg?im_q=medq&im_w=240"
                         place="Newport"
-                        distance={4.5}
+                        distance={5}
                     />
 
                     <MiniCard 
                         src="https://a0.muscache.com/im/pictures/b948e0e0-c78f-4895-b433-c90401019981.jpg?im_q=medq&im_w=240"
                         place="Woodstock"
-                        distance={3}
+                        distance={3.4}
                     />
                 </div>
 
@@ -43,25 +53,25 @@ function Home() {
                     <MiniCard 
                         src="https://a0.muscache.com/im/pictures/a7fe39da-3e57-44df-a744-9a73e482802d.jpg?im_q=medq&im_w=240"
                         place="Stowe"
-                        distance={8}
+                        distance={10}
                     />
 
                     <MiniCard 
                         src="https://a0.muscache.com/im/pictures/42901911-940b-45ac-997e-961ebf472195.jpg?im_q=medq&im_w=240"
                         place="Ithaca"
-                        distance={5.5}
+                        distance={15}
                     />
 
                     <MiniCard 
                         src="https://a0.muscache.com/im/pictures/7d80bee1-a510-4950-a1a0-07a4fb25ec2e.jpg?im_q=medq&im_w=240"
                         place="Nantuket"
-                        distance={9}
+                        distance={2}
                     />
 
                     <MiniCard
                         src="https://a0.muscache.com/im/pictures/56ede60a-f90f-48ac-8bb4-85a6d88215e5.jpg?im_q=medq&im_w=240"
                         place="Philadelphia"
-                        distance={2}
+                        distance={11}
                         
                     />
                 </div>

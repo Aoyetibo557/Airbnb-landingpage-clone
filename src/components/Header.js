@@ -13,24 +13,27 @@ import { Link } from 'react-router-dom';
 
 function Header() {
     return (
-        <div className="header">
-            <div>
-               <Link to="/">
-                    <img className="logo" src={Logo} alt="Logo" />
-               </Link>
-            </div>
-            
-            <div className="header__searchcontainer">
-                <input type="text" name="searchbar"  placeholder="Start your Search"/>
-                <HiOutlineSearch className="header__icons" />
-            </div>
+        <>
+           
+            <div className="header">
+                <div>
+                <Link to="/">
+                        <img className="logo" src={Logo} alt="Logo" />
+                </Link>
+                </div>
+                
+                <div className="header__searchcontainer">
+                    <input type="text" name="searchbar"  placeholder="Start your Search"/>
+                    <HiOutlineSearch className="header__icons" />
+                </div>
 
-            <div className="header__right">
-                <p>Become a Host</p>
-                <MdLanguage className="header__icon" />
-                <Avatar />
+                <div className="header__right">
+                    <p>Become a Host</p>
+                    <MdLanguage className="header__icon" />
+                    <Avatar />
+                </div>
             </div>
-        </div>
+        </>
     )
 }
 
